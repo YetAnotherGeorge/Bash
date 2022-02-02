@@ -1,10 +1,11 @@
 #!/bin/bash
-#: Title	: bash_template
-#: Date		: 2022-01-28
-#: Author	: YetAnotherGeorge
-#: Version	: 1.0
+#: Title        : bash_template
+#: Date         : 2022-01-28
+#: Author       : YetAnotherGeorge
+#: Version      : 1.0
+#: Options      : Script
 #: Description  : Creates a bash file template
-#: Options	: Script
+#: Description  : 
 
 [[ -z "$1" ]] && { echo "Error: Parameter 1 is empty; no title provided" ; exit 1; }
 

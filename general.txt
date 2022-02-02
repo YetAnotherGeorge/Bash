@@ -1,3 +1,5 @@
+#bin contains all "Published" scripts
+
 #remove all packages named player
 #iterInsExec will insert the input in place of {}
 #then execute the string
