@@ -1,0 +1,8 @@
+#remove all packages named player
+#iterInsExec will insert the input in place of {}
+#then execute the string
+
+dpkg -l 
+    | grep -P "player"
+    | grep -o -P "(?<=ii ) [^ \-\:]+" 
+    | iterInsExec "sudo apt-get -y purge --auto-remove {}"
