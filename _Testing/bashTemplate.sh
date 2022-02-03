@@ -20,18 +20,21 @@ printf "   Title       : %s\n" $1
 printf "   Date        : %s\n" $dateYMD
 printf "   Author      : %s\n" $author
 printf "   Version     : 1.0\n"
-printf "   Description : \n"
 printf "   Options     : \n"
+printf "   Description : \n"
+printf "   Description : \n"
 
 cat > $fpath <<- EOM
 #!/bin/bash
-#: Title	: $1
-#: Date		: $dateYMD
-#: Author	: $author
-#: Version	: 1.0 
-#: Description	: 
-#: Options	: 
+#: Title        : $1
+#: Date         : $dateYMD
+#: Author       : $author
+#: Version      : 1.0 
+#: Options      : 
+#: Description  : 
+#: Description  : 
 
+#code here
 EOM
 
 chmod 744 $fpath
