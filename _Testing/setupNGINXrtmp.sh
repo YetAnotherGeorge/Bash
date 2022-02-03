@@ -5,7 +5,7 @@
 #: Version      : 1.0 
 #: Options      : 
 #: Description  : 
-#: Description  : 
+#: Description  :
 
 cd ~
 
@@ -18,7 +18,7 @@ wget http://nginx.org/download/nginx-1.15.1.tar.gz
 wget https://github.com/sergey-dryabzhinsky/nginx-rtmp-module/archive/dev.zip
 printf "Downloaded nginx and rtmp module.\n"
 
-#bulid
+#build
 tar -zxvf nginx-1.15.1.tar.gz
 unzip dev.zip
 cd nginx-1.15.1
