@@ -6,8 +6,11 @@
 #: Description	: 
 #: Options	: 
 
-s1="string one"
-s2="string two"
+# s1="string one"
+# s2="string two"
 
-[ -n s1 ]
-printf "length of s1 is not zero\n"
+# [ -n s1 ]
+# printf "length of s1 is not zero\n"
+
+ls -lA
+printf "Executed ls -lA command with exit code: %s\n" "$?"
