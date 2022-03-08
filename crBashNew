@@ -3,9 +3,8 @@
 #: Date         : 2022-01-28
 #: Author       : YetAnotherGeorge
 #: Version      : 1.0
-#: Options      : Script
 #: Description  : Creates a bash file template
-#: Description  : 
+#: Options      : Script
 
 [[ -z "$1" ]] && { echo "Error: Parameter 1 is empty; no title provided" ; exit 1; }
 
@@ -20,9 +19,8 @@ printf "   Title       : %s\n" $1
 printf "   Date        : %s\n" $dateYMD
 printf "   Author      : %s\n" $author
 printf "   Version     : 1.0\n"
+printf "   Description : \n"
 printf "   Options     : \n"
-printf "   Description : \n"
-printf "   Description : \n"
 
 cat > $fpath <<- EOM
 #!/bin/bash
@@ -30,9 +28,8 @@ cat > $fpath <<- EOM
 #: Date         : $dateYMD
 #: Author       : $author
 #: Version      : 1.0 
+#: Description  : 
 #: Options      : 
-#: Description  : 
-#: Description  : 
 
 #code here
 EOM

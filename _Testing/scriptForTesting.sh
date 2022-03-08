@@ -6,11 +6,38 @@
 #: Description	: 
 #: Options	: 
 
-# s1="string one"
-# s2="string two"
+# ## Build a long string of equals signs
+# divider=====================================
+# divider=$divider$divider
 
-# [ -n s1 ]
-# printf "length of s1 is not zero\n"
+# ## Format strings for printf
+# header="\n %-10s %11s %8s %10s\n"
+# format=" %-10s %11.2f %8d %10.2f\n"
 
-ls -lA
-printf "Executed ls -lA command with exit code: %s\n" "$?"
+# ## Width of divider
+# totalwidth=44
+
+# ## Print:
+# > testFile
+# ## Print categories
+# printf "$header" ITEM "PER UNIT" NUM TOTAL
+# ## Print divider to match width of report
+# printf "%${totalwidth}.${totalwidth}s\n" "$divider"
+# ## Print lines of report
+# printf "$format" \
+#     Chair 79.95 4 319.8 \
+#     Table 209.99 1 209.99 \
+#     Armchair 315.49 2 630.98
+
+str="The current year is 2022"
+str2="The current year is 2023"
+
+test "$str" == "$str2"
+[ "$str" == "$str" ]
+
+if [[ $? -eq 0 ]]
+then
+    printf "yeet?\n";
+fi
+
+printf "Test result: %s\n" "$?"
